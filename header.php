@@ -1,5 +1,5 @@
 <?php
-session_abort();
+session_start();
 ?>
 <!doctype html>
 <html lang="es">
@@ -10,28 +10,37 @@ session_abort();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adidas Shop</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
-     </head>
+    <script src="js/script.js"></script>
+</head>
 <body>
-<?php
-if (isset($_SESSION['usuario'])) {
-    echo "Hola " . $_SESSION['usuario'];
-}else{
-    ?>
 <div class="header">
-    <a href="login.php" class="button">Inicar Sesión </a>
 <?php
-}
+if (isset($_SESSION["usuario"])){
+    echo "<img src='media/user.svg' alt='Iniciar Sesión' class='icono'> ".$_SESSION['usuario'];
+
+
+}else{
 ?>
+    <a href="login.php" class="icono"><img src="media/user.svg" alt="Iniciar Sesión"></a>
+<?php
+}?>
+<a href='carrito.php' class="icono"><img src='media/carrito.svg' alt='Resumen de la compra'></a>
+    <?php
+        if(isset($_SESSION["totalProductos"])){
+            echo $_SESSION["totalProductos"];
+        }
+    ?>
+</div>
+
 <nav>
     <img src="media/logo-adidas.webp" alt="Logo Adidas">
     <!--        menu-->
     <div class="menu">
-        <a href="#mujer">Mujer</a>
-        <a href="#hombre">Hombre</a>
-        <a href="#infantil">Infantil</a>
-        <a href="#zapatillas">Zapatillas</a>
-        <a href="#contacto">Contacto</a>
+        <a href="index.php#mujer">Mujer</a>
+        <a href="index.php#hombre">Hombre</a>
+        <a href="index.php#infantil">Infantil</a>
+        <a href="index.php#zapatillas">Zapatillas</a>
+        <a href="index.php#contacto">Contacto</a>
     </div>
 
 </nav>
