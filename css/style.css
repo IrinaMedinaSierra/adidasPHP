@@ -7,11 +7,10 @@ body{
     padding: 0;
 }
 #mujer,#hombre,#infantil,#zapatillas,#contacto{
-    background-color: rgba(169, 169, 169, 0.72);
-    margin:25px 0;
     width: 100%;
-    height: 500px;
+    height: 700px;
 }
+
 nav img{
     width: 10%;
     text-align: center;
@@ -32,9 +31,81 @@ nav img{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 50px;
+    height: 75px;
+    position: absolute;
+    top:15px;
+    right: 0;
 }
 .header a{
     color:black;
-    padding-right:25px ;
+    text-decoration: none;
+}
+.icono{
+    color:white;
+    background-color: black;
+    padding: 10px 12px;
+    margin: 15px;
+    border: none;
+    border-radius: 50%;
+}
+/* Estilo de la pagina de login*/
+.container{
+    width: 40%;
+    padding: 16px;
+    margin: 10% auto;
+}
+input[type="text"],input[type="password"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+}
+.cantidad{
+    text-align: center;
+}
+input[type="number"]{
+    width: 15%;
+}
+.boton{
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.boton:hover{
+    opacity: 0.8;
+}
+
+/* Estilo de las fotos de la home -> Galeria*/
+div.galeria{
+    border: 1px solid #cccccc;
+}
+div.galeria:hover{
+    border: 1px solid #777;
+}
+div.galeria img,div.galeria video{
+    width: 100%;
+    height: auto;
+}
+div.desc{
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.responsive{
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
+.galeria-item{
+    width: 600px;
+    height: 400px;
+}
+.video{
+    width: 100%;
 }

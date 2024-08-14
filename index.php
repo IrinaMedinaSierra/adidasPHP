@@ -1,44 +1,349 @@
-
-<!doctype html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adidas Shop</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-</head>
-<body>
-    <div class="header">
-        <a href="login.php">Iniciar Sesión</a>
-    </div>
-    <nav>
-        <img src="media/logo-adidas.webp" alt="Logo Adidas">
-<!--        menu-->
-        <div class="menu">
-            <a href="#mujer">Mujer</a>
-            <a href="#hombre">Hombre</a>
-            <a href="#infantil">Infantil</a>
-            <a href="#zapatillas">Zapatillas</a>
-            <a href="#contacto">Contacto</a>
-        </div>
-
-    </nav>
+<?php
+ include_once "header.php";
+?>
+<video src="media/adidas-productos-de-baloncesto.mp4" loop muted autoplay class="video"></video>
 
 <div id="mujer">
+<!--    Es muy utilizado en php input type=hidden -> Pasa parámetros pero no los muestra -> metodo POST o GET-->
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/conjunto-mujer-pilates-adidas.webp">
+                <img src="media/conjunto-mujer-pilates-adidas.webp" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">85€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
 
+            </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/conjunto-mujer-pilates-adidas.webp">
+                <img src="media/conjunto-mujer-pilates-adidas.webp" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">85€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
+
+            </form>
+
+
+        </div>
+    </div> <div class="responsive">
+        <div class="galeria">
+            <a href="media/conjunto-mujer-pilates-adidas.webp">
+                <img src="media/conjunto-mujer-pilates-adidas.webp" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">85€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
+
+            </form>
+
+
+        </div>
+    </div> <div class="responsive">
+        <div class="galeria">
+            <a href="media/conjunto-mujer-pilates-adidas.webp">
+                <img src="media/conjunto-mujer-pilates-adidas.webp" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">85€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
+
+            </form>
+
+
+        </div>
+    </div>
 </div>
 
 <div id="hombre">
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/bañador-adidas-negro-hombre.webp">
+                <img src="media/bañador-adidas-negro-hombre.webp" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">25€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="6">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
 
+            </form>
+
+
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/bañador-adidas-negro-hombre.webp">
+                <img src="media/bañador-adidas-negro-hombre.webp" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">25€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="6">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
+
+            </form>
+
+
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/bañador-adidas-negro-hombre.webp">
+                <img src="media/bañador-adidas-negro-hombre.webp" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">25€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="6">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
+
+            </form>
+
+
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/bañador-adidas-negro-hombre.webp">
+                <img src="media/bañador-adidas-negro-hombre.webp" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">25€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="6">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
+
+            </form>
+
+
+        </div>
+    </div>
 </div>
 <div id="infantil">
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/infantil-unisex-camiseta-verde.avif">
+                <img src="media/infantil-unisex-camiseta-verde.avif" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">85€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
 
+            </form>
+
+
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/infantil-unisex-camiseta-verde.avif">
+                <img src="media/infantil-unisex-camiseta-verde.avif" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">85€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
+
+            </form>
+
+
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/infantil-unisex-camiseta-verde.avif">
+                <img src="media/infantil-unisex-camiseta-verde.avif" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">85€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
+
+            </form>
+
+
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/infantil-unisex-camiseta-verde.avif">
+                <img src="media/infantil-unisex-camiseta-verde.avif" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">85€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
+
+            </form>
+
+
+        </div>
+    </div>
 </div>
 <div id="zapatillas">
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/zapatilla-adizero-boston.webp">
+                <img src="media/zapatilla-adizero-boston.webp" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">85€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
 
+            </form>
+
+
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/zapatilla-adizero-boston.webp">
+                <img src="media/zapatilla-adizero-boston.webp" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">85€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
+
+            </form>
+
+
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/zapatilla-adizero-boston.webp">
+                <img src="media/zapatilla-adizero-boston.webp" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">85€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
+
+            </form>
+
+
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="galeria">
+            <a href="media/zapatilla-adizero-boston.webp">
+                <img src="media/zapatilla-adizero-boston.webp" alt="Conjunto Adidas" class="galeria-item">
+            </a>
+            <div class="desc">85€</div>
+            <form action="carrito.php" method="post">
+                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
+                <input type="hidden" name="precio" value="85">
+                <p class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                </p>
+                <input type="submit" name="agregar" value="Comprar" class="boton">
+
+            </form>
+
+
+        </div>
+    </div>
 </div>
 <div id="contacto">
 
