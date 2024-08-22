@@ -16,15 +16,15 @@ session_start();
 <div class="header">
 <?php
 if (isset($_SESSION["usuario"])){
-    echo "<img src='media/user.svg' alt='Iniciar Sesión' class='icono'> ".$_SESSION['usuario'];
-
+    //echo "<img src='media/user.svg' alt='Iniciar Sesión' class='icono'> ".$_SESSION['usuario'];
+    echo  '<a href="logOut.php" class="icono"><img src="media/logout.svg" alt="Cerrar Sesión"></a>'.$_SESSION['usuario'];
 
 }else{
 ?>
     <a href="login.php" class="icono"><img src="media/user.svg" alt="Iniciar Sesión"></a>
 <?php
 }?>
-<a href='carrito.php' class="icono"><img src='media/carrito.svg' alt='Resumen de la compra'></a>
+<a href='mostrarCarrito.php' class="icono"><img src='media/carrito.svg' alt='Resumen de la compra'></a>
     <?php
         if(isset($_SESSION["totalProductos"])){
             echo $_SESSION["totalProductos"];

@@ -31,12 +31,12 @@
             </a>
             <div class="desc">85€</div>
             <form action="carrito.php" method="post">
-                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="id-producto" value="2">
                 <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
                 <input type="hidden" name="precio" value="85">
                 <p class="cantidad">
                     <label for="cantidad">Cantidad</label>
-                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                    <input type="number" name="cantidad" id="cantidad" value="2" min="1">
                 </p>
                 <input type="submit" name="agregar" value="Comprar" class="boton">
 
@@ -51,12 +51,12 @@
             </a>
             <div class="desc">85€</div>
             <form action="carrito.php" method="post">
-                <input type="hidden" name="id-producto" value="1">
+                <input type="hidden" name="id-producto" value="3">
                 <input type="hidden" name="nombre-producto" value="Conjunto mujer pilates ADIDAS">
                 <input type="hidden" name="precio" value="85">
                 <p class="cantidad">
                     <label for="cantidad">Cantidad</label>
-                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                    <input type="number" name="cantidad" id="cantidad" value="3" min="1">
                 </p>
                 <input type="submit" name="agregar" value="Comprar" class="boton">
 

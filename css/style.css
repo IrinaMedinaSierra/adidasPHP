@@ -109,3 +109,12 @@ div.desc{
 .video{
     width: 100%;
 }
+.container-2{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+.container-2 div{
+    padding: 25px;
+    width: 50%;
+}
