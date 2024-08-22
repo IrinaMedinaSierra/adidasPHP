@@ -52,7 +52,7 @@ nav img{
 .container{
     width: 40%;
     padding: 16px;
-    margin: 10% auto;
+    margin: 5% auto;
 }
 input[type="text"],input[type="password"]{
     width: 100%;
@@ -108,4 +108,46 @@ div.desc{
 }
 .video{
     width: 100%;
+}
+
+
+
+/* estilo de la cesta*/
+.cesta{
+    width: 75%;
+    margin: auto;
+    margin-top: 5%;
+}
+.textoCentrado{
+    text-align: center;
+}
+.botonPeque{
+    font-size: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+.botonPeque:hover{
+    opacity: 0.8;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+margin: auto;
+    border: 1px solid #ddd;
+
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.cantidadCarrito{
+    width: 20%!important;
+    padding: 7px 0;
+    text-align: center;
 }

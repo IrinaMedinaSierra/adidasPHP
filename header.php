@@ -8,6 +8,7 @@ session_start();
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="media/favicon-adidas.jpg">
     <title>Adidas Shop</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
@@ -24,7 +25,7 @@ if (isset($_SESSION["usuario"])){
     <a href="login.php" class="icono"><img src="media/user.svg" alt="Iniciar Sesión"></a>
 <?php
 }?>
-<a href='carrito.php' class="icono"><img src='media/carrito.svg' alt='Resumen de la compra'></a>
+<a href='mostrarCarrito.php' class="icono"><img src='media/carrito.svg' alt='Resumen de la compra'></a>
     <?php
         if(isset($_SESSION["totalProductos"])){
             echo $_SESSION["totalProductos"];

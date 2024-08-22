@@ -9,7 +9,7 @@ if(!isset($_SESSION["usuario"])){
         <input type="text" id="usuario" name="usuario">
         <label for="password">Contraseña</label>
         <input type="password" id="password" name="password">
-        <input type="submit" value="Iniciar Sesión" class="boton">
+        <input type="submit" value="Iniciar Sesión" class="boton" name="iniciarSesion">
     </form>
 
 <?php
